@@ -38,14 +38,14 @@ if (choice === "yes" || choice === "Yes" || choice === "YES") {
 
 
   } else if (order === 'two' || order === 'Two' || order === 'TWO') {
-    quantity = prompt(`How many servings? `)
-    price = quantity * cost[1]
+    quantity = prompt(`How many servings ?Please input a number, not text.`)
+    price = perseFloat(quantity * cost[1])
     details = "Tacos and chips"
 
 
   } else if (order === 'three' || order === 'Three' || order === 'THREE') {
-    quantity = prompt(`How many servings? `)
-    price = quantity * cost[2]
+    quantity = prompt(`How many servings? Pleease use a number, not text `)
+    price = perseFloat(quantity * cost[2])
     details = "Tortillas"
   }
 
